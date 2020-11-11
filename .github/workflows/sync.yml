@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        
+
       - name: sync lxk0301 jd_scripts
         uses: Yikun/hub-mirror-action@master
         with:

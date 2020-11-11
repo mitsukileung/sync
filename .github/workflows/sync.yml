@@ -31,5 +31,4 @@ jobs:
           dst: github/18u
           dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
-          white_list: "jd_scripts"
-          account_type: org
+          static_list: "jd_scripts"

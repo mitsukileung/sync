@@ -33,4 +33,4 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "jd_scripts"
           account_type: org
-          clone_style: https
+#           clone_style: https

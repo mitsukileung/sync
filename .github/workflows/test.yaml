@@ -33,4 +33,5 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "xmly_speed"
           account_type: org
+          name_changed: true
 #           clone_style: https

@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: sync github/lxk0301
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/lxk0301
           dst: github/18u
@@ -33,11 +33,11 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "jd_scripts"
           account_type: org
-          name_changed: true
+          rename_dst: true
           # clone_style: https
 
       - name: sync github/Zero-S1
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/Zero-S1
           dst: github/18u
@@ -45,10 +45,10 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "xmly_speed,JD_tools"
           account_type: org
-          name_changed: true
+          rename_dst: true
 
       - name: sync github/sazs34
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/sazs34
           dst: github/18u
@@ -56,10 +56,10 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "MyActions,TaskConfig,Convert"
           account_type: org
-          name_changed: true
+          rename_dst: true
 
       - name: sync github/NobyDa
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/NobyDa
           dst: github/18u
@@ -67,10 +67,10 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "Script"
           account_type: org
-          name_changed: true
+          rename_dst: true
 
       - name: sync github/Sunert
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/Sunert
           dst: github/18u
@@ -78,10 +78,10 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "Scripts"
           account_type: org
-          name_changed: true
+          rename_dst: true
 
       - name: sync github/chavyleung
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/chavyleung
           dst: github/18u
@@ -89,10 +89,10 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "scripts"
           account_type: org
-          name_changed: true
+          rename_dst: true
 
       - name: sync github/Tartarus2014
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/Tartarus2014
           dst: github/18u
@@ -100,10 +100,10 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "For-own-use,Loon-Script,Surge-Script,Shadowrocket-Script,QuantumultX-Script"
           account_type: org
-          name_changed: true
+          rename_dst: true
 
       - name: sync github/mengshouer
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/mengshouer
           dst: github/18u
@@ -111,10 +111,10 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "CheckinBox"
           account_type: org
-          name_changed: true
+          rename_dst: true
 
       - name: sync github/BlueskyClouds
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/BlueskyClouds
           dst: github/18u
@@ -122,10 +122,10 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "My-Actions"
           account_type: org
-          name_changed: true
+          rename_dst: true
 
       - name: sync github/zZPiglet
-        uses: fo7/sync-repo@main
+        uses: fakedon/hub-mirror@main
         with:
           src: github/zZPiglet
           dst: github/18u
@@ -133,5 +133,4 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           static_list: "Task"
           account_type: org
-          name_changed: true
-
+          rename_dst: true

@@ -178,3 +178,14 @@ jobs:
           static_list: "jscool"
           account_type: org
           rename_dst: true
+
+      - name: sync github/wpc2333
+        uses: fakedon/hub-mirror@main
+        with:
+          src: github/wpc2333
+          dst: github/18u
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "AutoWatch"
+          account_type: org
+          rename_dst: true

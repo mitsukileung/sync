@@ -134,3 +134,47 @@ jobs:
           static_list: "Task"
           account_type: org
           rename_dst: true
+
+      - name: sync github/jinboyigu
+        uses: fakedon/hub-mirror@main
+        with:
+          src: github/jinboyigu
+          dst: github/18u
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "lazy_script"
+          account_type: org
+          rename_dst: true
+
+      - name: sync github/liuxiaoyucc
+        uses: fakedon/hub-mirror@main
+        with:
+          src: github/liuxiaoyucc
+          dst: github/18u
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "jd-helper"
+          account_type: org
+          rename_dst: true
+
+      - name: sync github/799953468
+        uses: fakedon/hub-mirror@main
+        with:
+          src: github/799953468
+          dst: github/18u
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Quantumult-X"
+          account_type: org
+          rename_dst: true
+
+      - name: sync github/demo2099
+        uses: fakedon/hub-mirror@main
+        with:
+          src: github/demo2099
+          dst: github/18u
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "jscool"
+          account_type: org
+          rename_dst: true

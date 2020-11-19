@@ -34,6 +34,19 @@ jobs:
           # clone_style: https
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
+      - name: mirror gitee/lxk0301
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: gitee/lxk0301
+          dst: github/18u
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "scripts"
+          account_type: org
+          rename_dst: true
+          # clone_style: https
+          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
       - name: mirror github/Zero-S1
         uses: fakedon/hub-mirror@regex
         with:

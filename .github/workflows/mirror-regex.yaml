@@ -1,0 +1,204 @@
+name: mirror-regex
+
+on:
+  schedule:
+    - cron: '46 2/3 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: mirror-regex
+
+
+jobs:
+  mirror:
+    env:
+      PAT: ${{ secrets.PAT }}
+	  DEFAULT_DST: github/18u
+      DEFAULT_RENAME_FMT: 's/(.*)/${SRC_TYPE}_${SRC_ACCOUNT}.\1/g'
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id || github.event.sender.login == 'uuz'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: mirror github/lxk0301
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/lxk0301
+          dst: github/18u
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "jd_scripts"
+          account_type: org
+          rename_dst: true
+          # clone_style: https
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/Zero-S1
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/Zero-S1
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "xmly_speed,JD_tools"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/sazs34
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/sazs34
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "MyActions,TaskConfig,Convert"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/NobyDa
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/NobyDa
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Script"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/Sunert
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/Sunert
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Scripts"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/chavyleung
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/chavyleung
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "scripts"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/Tartarus2014
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/Tartarus2014
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "For-own-use,Loon-Script,Surge-Script,Shadowrocket-Script,QuantumultX-Script"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/mengshouer
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/mengshouer
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "CheckinBox"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/BlueskyClouds
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/BlueskyClouds
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "My-Actions"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/zZPiglet
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/zZPiglet
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Task"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/jinboyigu
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/jinboyigu
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "lazy_script"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/liuxiaoyucc
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/liuxiaoyucc
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "jd-helper"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/799953468
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/799953468
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Quantumult-X"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/demo2099
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/demo2099
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "jscool"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/wpc2333
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/wpc2333
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "AutoWatch"
+          account_type: org
+          rename_dst: true
+		  rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

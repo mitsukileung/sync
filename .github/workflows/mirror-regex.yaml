@@ -286,3 +286,39 @@ jobs:
           account_type: org
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/elecV2
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/elecV2
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "QuantumultX-Tools,elecV2P"
+          account_type: org
+          rename_dst: true
+          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/gcdd1993
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/gcdd1993
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "jd_scripts"
+          account_type: org
+          rename_dst: true
+          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/jpcnmm
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/jpcnmm
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Scripting"
+          account_type: org
+          rename_dst: true
+          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

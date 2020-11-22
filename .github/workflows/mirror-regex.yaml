@@ -66,7 +66,7 @@ jobs:
           dst: ${{ env.DEFAULT_DST }}
           dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
-          static_list: "MyActions,TaskConfig,Convert"
+          static_list: "MyActions" # "MyActions,TaskConfig,Convert"
           account_type: org
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

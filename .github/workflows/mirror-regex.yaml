@@ -414,7 +414,7 @@ jobs:
           dst: ${{ env.DEFAULT_DST }}
           dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
-          static_list: "DivineEngine"
+          static_list: "Profiles"
           account_type: org
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

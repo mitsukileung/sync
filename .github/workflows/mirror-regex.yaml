@@ -418,3 +418,15 @@ jobs:
           account_type: org
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/iisams
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/iisams
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Scripts"
+          account_type: org
+          rename_dst: true
+          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

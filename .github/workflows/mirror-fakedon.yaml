@@ -1,4 +1,4 @@
-name: mirror-regex
+name: mirror-fakedon
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: mirror-regex
+    types: mirror-fakedon
 
 jobs:
   mirror:
@@ -474,7 +474,6 @@ jobs:
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
           white_list: "Script"
 #           static_list: "Script"
-          account_type: org
           force_update: true
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

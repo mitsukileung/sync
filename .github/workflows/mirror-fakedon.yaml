@@ -478,3 +478,4 @@ jobs:
           force_update: true
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+          debug: true

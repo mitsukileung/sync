@@ -153,6 +153,7 @@ jobs:
           static_list: "Task"
           account_type: org
           rename_dst: true
+          force_update: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/jinboyigu

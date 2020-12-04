@@ -430,3 +430,15 @@ jobs:
           account_type: org
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+
+      - name: mirror github/MoPoQAQ
+        uses: fakedon/hub-mirror@regex
+        with:
+          src: github/MoPoQAQ
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Script"
+          account_type: org
+          rename_dst: true
+          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

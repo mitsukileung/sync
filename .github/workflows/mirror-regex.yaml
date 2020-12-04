@@ -439,7 +439,8 @@ jobs:
           dst: ${{ env.DEFAULT_DST }}
           dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
-          static_list: "Script"
+          white_list: "Script"
+#           static_list: "Script"
           account_type: org
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

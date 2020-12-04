@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: mirror github/lxk0301
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/lxk0301
           dst: github/18u
@@ -35,7 +35,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror gitee/lxk0301
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: gitee/lxk0301
           dst: github/18u
@@ -48,7 +48,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/Zero-S1
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/Zero-S1
           dst: ${{ env.DEFAULT_DST }}
@@ -60,7 +60,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/sazs34
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/sazs34
           dst: ${{ env.DEFAULT_DST }}
@@ -72,7 +72,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/NobyDa
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/NobyDa
           dst: ${{ env.DEFAULT_DST }}
@@ -84,7 +84,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/Sunert
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/Sunert
           dst: ${{ env.DEFAULT_DST }}
@@ -96,7 +96,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/chavyleung
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/chavyleung
           dst: ${{ env.DEFAULT_DST }}
@@ -108,7 +108,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/Tartarus2014
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/Tartarus2014
           dst: ${{ env.DEFAULT_DST }}
@@ -120,7 +120,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/mengshouer
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/mengshouer
           dst: ${{ env.DEFAULT_DST }}
@@ -132,7 +132,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/BlueskyClouds
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/BlueskyClouds
           dst: ${{ env.DEFAULT_DST }}
@@ -144,7 +144,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/zZPiglet
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/zZPiglet
           dst: ${{ env.DEFAULT_DST }}
@@ -156,7 +156,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/jinboyigu
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/jinboyigu
           dst: ${{ env.DEFAULT_DST }}
@@ -168,7 +168,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/liuxiaoyucc
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/liuxiaoyucc
           dst: ${{ env.DEFAULT_DST }}
@@ -180,7 +180,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/799953468
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/799953468
           dst: ${{ env.DEFAULT_DST }}
@@ -192,7 +192,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/demo2099
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/demo2099
           dst: ${{ env.DEFAULT_DST }}
@@ -204,7 +204,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/wpc2333
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/wpc2333
           dst: ${{ env.DEFAULT_DST }}
@@ -216,7 +216,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/yangtingxiao
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/yangtingxiao
           dst: ${{ env.DEFAULT_DST }}
@@ -228,7 +228,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/whyour
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/whyour
           dst: ${{ env.DEFAULT_DST }}
@@ -240,7 +240,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/blackmatrix7
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/blackmatrix7
           dst: ${{ env.DEFAULT_DST }}
@@ -252,7 +252,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/barrym-chen
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/barrym-chen
           dst: ${{ env.DEFAULT_DST }}
@@ -264,7 +264,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/ddgksf2013
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/ddgksf2013
           dst: ${{ env.DEFAULT_DST }}
@@ -276,7 +276,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/XidNDD
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/XidNDD
           dst: ${{ env.DEFAULT_DST }}
@@ -288,7 +288,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/elecV2
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/elecV2
           dst: ${{ env.DEFAULT_DST }}
@@ -300,7 +300,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/gcdd1993
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/gcdd1993
           dst: ${{ env.DEFAULT_DST }}
@@ -312,7 +312,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/jpcnmm
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/jpcnmm
           dst: ${{ env.DEFAULT_DST }}
@@ -324,7 +324,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/wangdelu2020
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/wangdelu2020
           dst: ${{ env.DEFAULT_DST }}
@@ -336,7 +336,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/id77
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/id77
           dst: ${{ env.DEFAULT_DST }}
@@ -348,7 +348,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/iosrule-hub
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/iosrule-hub
           dst: ${{ env.DEFAULT_DST }}
@@ -360,7 +360,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/littlecodersh
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/littlecodersh
           dst: ${{ env.DEFAULT_DST }}
@@ -372,7 +372,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/ziye12
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/ziye12
           dst: ${{ env.DEFAULT_DST }}
@@ -384,7 +384,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/ZhiYi-N
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/ZhiYi-N
           dst: ${{ env.DEFAULT_DST }}
@@ -396,7 +396,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/nzw9314
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/nzw9314
           dst: ${{ env.DEFAULT_DST }}
@@ -408,7 +408,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/DivineEngine
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/DivineEngine
           dst: ${{ env.DEFAULT_DST }}
@@ -420,7 +420,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/iisams
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/iisams
           dst: ${{ env.DEFAULT_DST }}
@@ -432,7 +432,7 @@ jobs:
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/MoPoQAQ
-        uses: fakedon/hub-mirror@regex
+        uses: fakedon/hub-mirror-action@fakedon
         with:
           src: github/MoPoQAQ
           dst: ${{ env.DEFAULT_DST }}

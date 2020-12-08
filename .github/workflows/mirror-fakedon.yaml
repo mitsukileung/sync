@@ -487,3 +487,16 @@ jobs:
           rename_dst: true
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 #           debug: true
+
+      - name: mirror github/TNanko
+        uses: fakedon/hub-mirror-action@fakedon
+        with:
+          src: github/TNanko
+          dst: ${{ env.DEFAULT_DST }}
+          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+          static_list: "Scripts"
+          dst_account_type: org
+          force_update: true
+          rename_dst: true
+          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}

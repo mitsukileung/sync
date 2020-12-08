@@ -1,13 +1,13 @@
-name: mirror-fakedon
+name: 18u
 
 on:
   schedule:
-    - cron: '46 2/3 * * *'
+    - cron: '35 */2 * * *'
   workflow_dispatch:
   watch:
     types: started
   repository_dispatch:
-    types: mirror-fakedon
+    types: 18u
 
 jobs:
   mirror:

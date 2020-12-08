@@ -1,4 +1,4 @@
-name: mirror-fakedon
+name: fq9
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: mirror-fakedon
+    types: fq9
 
 jobs:
   mirror:

@@ -129,7 +129,7 @@ jobs:
           dst: ${{ env.DEFAULT_DST }}
           dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
-          static_list: "For-own-use,Loon-Script,Surge-Script,Shadowrocket-Script,QuantumultX-Script"
+          static_list: "For-own-use,Loon-Script,Surge-Script,Shadowrocket-Script,QuantumultX-Script,Script"
           dst_account_type: org
           force_update: true
           rename_dst: true

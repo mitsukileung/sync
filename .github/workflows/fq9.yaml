@@ -454,24 +454,24 @@ jobs:
           dst: ${{ env.DEFAULT_DST }}
           dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
-          static_list: "Profiles"
-          dst_account_type: org
-          force_update: true
-          rename_dst: true
-          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+#           static_list: "Profiles"
+#           dst_account_type: org
+#           force_update: true
+#           rename_dst: true
+#           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
-      - name: mirror github/iisams
-        uses: fakedon/hub-mirror-action@fakedon
-        with:
-          src: github/iisams
-          dst: ${{ env.DEFAULT_DST }}
-          dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
-          dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
-          static_list: "Scripts"
-          dst_account_type: org
-          force_update: true
-          rename_dst: true
-          rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
+#       - name: mirror github/iisams
+#         uses: fakedon/hub-mirror-action@fakedon
+#         with:
+#           src: github/iisams
+#           dst: ${{ env.DEFAULT_DST }}
+#           dst_key: ${{ secrets.UUZ_GITHUB_SSH_KEY }}
+#           dst_token: ${{ secrets.UUZ_GITHUB_TOKEN }}
+#           static_list: "Scripts"
+#           dst_account_type: org
+#           force_update: true
+#           rename_dst: true
+#           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
 
       - name: mirror github/MoPoQAQ
         uses: fakedon/hub-mirror-action@fakedon

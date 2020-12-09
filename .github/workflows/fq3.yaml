@@ -1,8 +1,8 @@
 name: fq3
 
 on:
-#  schedule:
-#    - cron: '46 */2 * * *'
+ schedule:
+   - cron: '46 */2 * * *'
   workflow_dispatch:
   watch:
     types: started

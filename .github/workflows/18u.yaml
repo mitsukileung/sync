@@ -2,7 +2,7 @@ name: 18u
 
 on:
   schedule:
-    - cron: '35 */2 * * *'
+    - cron: '35 20 * * *'
   workflow_dispatch:
   watch:
     types: started
